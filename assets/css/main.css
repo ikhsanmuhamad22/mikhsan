@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.warna {
+  color: #63677;
+  color: #999D9F;
+  color: #C0C0C0;
+  color: #EDEDED;
+}
+
+body {
+  font-family: 'popins', sans-serif;
+}
+
+h1 {
+  font-family: 'popins', sans-serif;
+  font-weight: 700;
+}
+
+p {
+  font-family: 'popins', sans-serif;
+  font-weight: 400;
+}
+
+section {
+  height: 100vh;
+}
