@@ -1,5 +1,5 @@
 <template>
-  <section class="me flex md:flex-row flex-col flex-wrap justify-center content-center gap-10">
+  <section class="flex md:flex-row flex-col flex-wrap justify-center content-center gap-10">
     <div class="me-image md:w-96 w-56">
       <img class="rounded-full shadow-2xl shadow-gray-400" src="../assets/me.jpg" alt="me">
     </div>
@@ -7,7 +7,7 @@
       <p >Hi. {{ me.name }} here</p>
       <p class="md:text-5xl text-3xl font-extrabold">And i'm</p>
       <div class="flex">
-        <h1 class="md:text-4xl text-2xl" ref="title">{{ me.title }}</h1>
+        <h1 class="md:text-4xl text-2xl bg-gray-800 text-white" ref="title">{{ me.title }}</h1>
       </div>
     </div>
   </section>
@@ -31,7 +31,7 @@ import Typed from 'typed.js';
     methods: {
       initializeTyped() {
         const options = {
-          strings: ['Junior Developer','Web Developer'], 
+          strings: ['Junior Developer','Web Developer','Backend Developer'], 
           typeSpeed: 100, 
           loop: true,
           backSpeed: 50

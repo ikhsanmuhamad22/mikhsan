@@ -39,7 +39,8 @@ export default {
     families: {
       Roboto: true,
       Inter: [400, 700],
-      Oswald: true
+      Oswald: true,
+      Lexend: true
     }
   },
 
