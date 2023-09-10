@@ -26,3 +26,17 @@ p {
 section {
   height: 100vh;
 }
+
+.scroll-container {
+  height: 500px; /* Container dengan tinggi tertentu */
+  overflow: hidden; /* Pastikan pengguliran berfungsi */
+  position: relative; /* Diperlukan untuk elemen animasi */
+}
+
+.animated-element {
+  opacity: 0; /* Awalnya tersembunyi */
+  transform: translateY(50px); /* Awalnya bergeser ke bawah */
+  width: 100px;
+  height: 100px;
+  background-color: blue;
+}

@@ -1,7 +1,7 @@
 <template>
   <section class="flex flex-col justify-center flex-wrap content-center">
     <h1 class="md:text-5xl text-3xl font-extrabold bg-gray-800 text-white w-fit">About Me</h1>
-    <div class="w-2/4 text-center m-10">
+    <div class="lg:w-2/4 text-center m-10">
       <p class="md:text-2xl text-sm font-semibold">{{ about }}</p>
     </div>
   </section>

@@ -1,27 +1,29 @@
 <template>
-  <section class="lg:py-32 lg:px-20 py-32 h-auto">
+  <section class="lg:py-32 lg:px-20 pt-20 h-auto">
     <div class="flex lg:flex-row flex-col justify-center gap-20">
       <div id="mySkill" class="text-center flex-1">
         <h1 class="md:text-3xl text-xl font-extrabold bg-gray-800 text-white w-fit">My Skill</h1>
-        <div class="grid lg:grid-cols-5 grid-cols-3 gap-6 m-10">
-          <div v-for="(skill, index) in mySkill" :key="index" class="shadow-md p-4">
+        <div class="grid lg:grid-cols-5 grid-cols-4 gap-6 lg:m-10 m-3">
+          <div v-for="(skill, index) in mySkill" :key="index" class="shadow-md p-4 text-center">
             <img class="md:w-14 w-10" :src="require(`@/assets/icons/${skill.logo}`)" :alt="skill.name">
           </div>
         </div>
       </div>
       <div class="flex flex-col flex-1">
         <h1 class="md:text-3xl text-xl font-extrabold bg-gray-800 text-white w-fit">contact</h1>
-        <div class="flex-col shadow-2xl lg:p-10 p-2 rounded-lg">
+        <div class="flex-col shadow-2xl lg:p-10 p-2 lg:m-10 m-3 rounded-lg">
           <div v-for="(item, index) in contact" :key="index" id="contact" class="flex flex-col gap-7">
             <div class="flex flex-row gap-5">
               <div class="p-2 w-14">
-              <img :src="require(`@/assets/contact-icons/${item.logo}`)" :alt="item.name">
-            </div>
-            <div>
-              <h1>{{ item.name }}</h1>
-              <p>{{ item.me }}</p>
-            </div>
-          </div>
+                <img :src="require(`@/assets/contact-icons/${item.logo}`)" :alt="item.name">
+                </div>
+                <a :href="item.link">
+                <div class="hover:bg-gray-800 hover:text-white w-fit my-1">
+                  <h1 class="text-lg">{{ item.name }}</h1>
+                  <p class="text-sm">{{ item.me }}</p>
+                </div>
+              </a>
+              </div>
         </div>
       </div>
     </div>
@@ -111,7 +113,7 @@
           name: 'Instagram',
           me: 'ikhsnmhmd_01',
           link: 'https://www.instagram.com/ikhsnmhmd001_/',
-          logo: 'facebook.png'
+          logo: 'instagram.png'
           }, 
         ]
       }
