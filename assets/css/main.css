@@ -2,13 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-.warna {
-  color: #63677;
-  color: #999D9F;
-  color: #C0C0C0;
-  color: #EDEDED;
-}
-
 body {
   font-family: 'Lexend', sans-serif;
 }

@@ -3,7 +3,7 @@
     <div class="flex lg:flex-row flex-col justify-center gap-20">
       <div id="mySkill" class="text-center flex-1">
         <h1 class="md:text-3xl text-xl font-extrabold bg-gray-800 text-white w-fit">My Skill</h1>
-        <div class="grid lg:grid-cols-5 grid-cols-4 gap-6 lg:m-10 m-3">
+        <div class="grid md:grid-cols-5 grid-cols-4 gap-6 lg:m-10 m-3">
           <div v-for="(skill, index) in mySkill" :key="index" class="shadow-md p-4 text-center">
             <img class="md:w-14 w-10" :src="require(`@/assets/icons/${skill.logo}`)" :alt="skill.name">
           </div>
